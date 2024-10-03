@@ -1,0 +1,108 @@
+/* Container for centering the layout */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+}
+
+
+.left-column {
+    background-color: #00ff00;
+    padding: 15px;
+    border-radius: 10px;
+    width: 50%;
+    height: 250px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.todo-list {
+    margin-bottom: 20px;
+}
+
+.todo-description {
+    padding-left: 0px;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+form input,
+form button {
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+form button[type="submit"] {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+.right-columns-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.second-column {
+    width: 30%;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.second-column .list-group-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.third-column {
+    width: 70%;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-description h5 {
+    margin-bottom: 10px;
+}
+
+.todo-description p {
+    margin-bottom: 15px;
+}
+
+.todo-description input {
+    width: 100%;
+}
