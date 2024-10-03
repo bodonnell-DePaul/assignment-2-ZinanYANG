@@ -1,54 +1,70 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/79_d0ssh)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=16312307)
-# Assignment2
-![Example Image](ScreenShot.png)
-# Assignment Description
+# Getting Started with Create React App
 
-In this assignment, you are required to create a ToDo List application using React and Bootstrap. The application will display a list of ToDo items, each with a title, description, and due date. The ToDo items will be displayed in a ListGroup and Tab interface, where the ListGroup will contain the titles of the ToDo items and the Tab will contain the descriptions and due dates of the ToDo items. The ToDo items will be color-coded based on their due dates.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Environment Setup
-1. Download and install NodeJS [NodeJS](https://nodejs.org/en/download/package-manager)
-2. Once NodeJS is installed open a Terminal (or open the repo in VS Code and open a Terminal window)
-3. Install the testing modules using: `npm install --save-dev jest jsdom jest-environment-jsdom`
-4. Install the required modules: `npm install create-react-app`
-5. Create your React application: `npx create-react-app <MyAppName>`
-6. Navigate to the newly create directory and install the Bootstrap React Module: `npm install react-bootstrap bootstrap`
-7. You can now run the tests written in `index.test.js` by using VS Code testing UI or by running `npm test` in the Terminal
-8. In order for the VS Code testing UI to appear you may have to restart VS Code.  The testing UI icon appears like a small beaker on the left side of the window
-   
-# Requirements
+## Available Scripts
 
-1. **Data:** Create a static array of ToDo items. Each ToDo item should be an object with the following properties: `title`, `description`, and `dueDate`.  Some content has been provided for you in `todoItems.js`.  
+In the project directory, you can run:
 
-2. **ListGroup:** Use the `ListGroup` component from `react-bootstrap` to display the titles of the ToDo items. Each `ListGroup.Item` should be linked to a corresponding `Tab.Pane`.
+### `npm start`
 
-3. **Tab:** Use the `Tab` component from `react-bootstrap` to display the descriptions and due dates of the ToDo items. Each `Tab.Pane` should be controlled by a corresponding `ListGroup.Item`.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-4. **Color Coding:** Create a function that determines the color of a ToDo item based on its due date. The function should return a string that corresponds to one of the Bootstrap color variants (e.g., 'danger', 'warning', 'success', 'primary'). Use this function to apply a color to each `ListGroup.Item`.  The variants need to align with the following logic:
-    * primary:due date > 7 days
-    * success:due date < 7 days
-    * warning:due date < 4 days
-    * danger:due date < 2 days
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-5. **Editable Items:** Make the descriptions, and due dates of the ToDo items editable. For description, use the `contentEditable` attribute to achieve this.  For the due date use a date input.
+### `npm test`
 
-6. **Header:** Add a header to the application with the text "Assignment 2: `Your Name` ToDo List".
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-7. **Form:** Add a form to the application with fields for adding a new ToDo item. The form should include a text input for the title, a date input for the due date, and a submit button. The form does not need to be functional.
+### `npm run build`
 
-8. **Styling:** All additional styling should be kept in a separate CSS file and imported into your application
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-# Tips
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-* Use the `Container`, `Row`, and `Col` components from `react-bootstrap` to layout your components.
-* Use the `Form` and `Button` components from `react-bootstrap` to create the form.
-* Use the `Tab.Container`, `Tab.Content`, and `Tab.Pane` components from `react-bootstrap` to create the Tab interface.
-* Use the `ListGroup` and `ListGroup.Item` components from `react-bootstrap` to create the ListGroup interface.
-* Use the `eventKey` prop and `href` prop to link the `ListGroup.Item` components to the `Tab.Pane` components.
-* Use the `variant` prop to apply the color to the `ListGroup.Item` components.
-* Use the `contentEditable` attribute to make the descriptions, and due dates editable.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-# Resources
-* [React Documentation](https://react.dev/learn)
-* [React Bootstrap Documentation](https://react-bootstrap.github.io/docs/getting-started/introduction)
-* [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
